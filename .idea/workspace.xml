@@ -2,28 +2,50 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c1179a60-2ced-417a-a8a0-91130b99409d" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/dice/src/Dice.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dice/src/Dice.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dice/src/RollDice.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dice/src/RollDice.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/stateclicker/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/stateclicker/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/stateclicker/package-lock.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/stateclicker/package.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/stateclicker/public/favicon.ico" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/stateclicker/public/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/stateclicker/public/logo192.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/stateclicker/public/logo512.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/stateclicker/public/manifest.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/stateclicker/public/robots.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/stateclicker/src/App.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/stateclicker/src/App.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/stateclicker/src/App.test.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/stateclicker/src/Clicker.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/stateclicker/src/index.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/stateclicker/src/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/stateclicker/src/logo.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/stateclicker/src/serviceWorker.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/coinflip/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/coinflip/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/coinflip/package-lock.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/coinflip/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/coinflip/public/favicon.ico" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/coinflip/public/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/coinflip/public/logo192.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/coinflip/public/logo512.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/coinflip/public/manifest.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/coinflip/public/robots.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/coinflip/src/App.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/coinflip/src/App.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/coinflip/src/App.test.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/coinflip/src/Coin.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/coinflip/src/Coin.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/coinflip/src/CoinFlipper.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/coinflip/src/CoinFlipper.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/coinflip/src/index.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/coinflip/src/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/coinflip/src/logo.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/coinflip/src/serviceWorker.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/colorboxes/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/colorboxes/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/colorboxes/package-lock.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/colorboxes/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/colorboxes/public/favicon.ico" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/colorboxes/public/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/colorboxes/public/logo192.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/colorboxes/public/logo512.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/colorboxes/public/manifest.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/colorboxes/public/robots.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/colorboxes/src/App.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/colorboxes/src/App.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/colorboxes/src/App.test.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/colorboxes/src/Box.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/colorboxes/src/Box.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/colorboxes/src/BoxContainer.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/colorboxes/src/BoxContainer.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/colorboxes/src/helpers.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/colorboxes/src/index.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/colorboxes/src/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/colorboxes/src/logo.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/colorboxes/src/serviceWorker.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -37,64 +59,61 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/dice/src/App.js">
+        <entry file="file://$PROJECT_DIR$/colorboxes/src/App.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="85">
-              <caret line="7" column="15" selection-start-line="7" selection-start-column="15" selection-end-line="7" selection-end-column="15" />
+            <state relative-caret-position="17">
+              <caret line="1" column="40" selection-start-line="1" selection-start-column="28" selection-end-line="1" selection-end-column="40" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/colorboxes/src/Box.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="34">
+              <caret line="2" column="15" selection-start-line="2" selection-start-column="15" selection-end-line="2" selection-end-column="15" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/colorboxes/src/Box.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="68">
+              <caret line="4" column="29" selection-start-line="4" selection-start-column="29" selection-end-line="4" selection-end-column="29" />
               <folding>
-                <element signature="e#0#26#0" expanded="true" />
+                <element signature="e#0#40#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/dice/src/Dice.js">
+        <entry file="file://$PROJECT_DIR$/colorboxes/src/BoxContainer.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="119">
-              <caret line="7" column="44" selection-start-line="7" selection-start-column="44" selection-end-line="7" selection-end-column="44" />
+            <state relative-caret-position="253">
+              <caret line="16" column="5" lean-forward="true" selection-start-line="16" selection-start-column="5" selection-end-line="16" selection-end-column="5" />
               <folding>
-                <element signature="e#0#39#0" expanded="true" />
+                <element signature="e#0#40#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/dice/src/Dice.css">
+        <entry file="file://$PROJECT_DIR$/colorboxes/src/BoxContainer.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="187">
-              <caret line="11" column="19" lean-forward="true" selection-start-line="11" selection-start-column="19" selection-end-line="11" selection-end-column="19" />
+            <state>
+              <caret column="8" selection-start-column="8" selection-end-column="8" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/dice/src/RollDice.js">
+        <entry file="file://$PROJECT_DIR$/colorboxes/src/helpers.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="190">
-              <caret line="31" column="57" selection-start-line="31" selection-start-column="50" selection-end-line="31" selection-end-column="57" />
-              <folding>
-                <element signature="e#0#39#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/dice/src/RollDice.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="165">
-              <caret line="10" column="14" lean-forward="true" selection-start-line="10" selection-start-column="14" selection-end-line="10" selection-end-column="14" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/dice/public/index.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="425">
-              <caret line="25" column="6" selection-start-line="25" selection-start-column="6" selection-end-line="25" selection-end-column="6" />
+            <state relative-caret-position="85">
+              <caret line="5" column="14" selection-start-line="5" selection-start-column="14" selection-end-line="5" selection-end-column="14" />
             </state>
           </provider>
         </entry>
@@ -115,12 +134,22 @@
         <option value="$PROJECT_DIR$/dice/src/Dice.css" />
         <option value="$PROJECT_DIR$/dice/src/RollDice.js" />
         <option value="$PROJECT_DIR$/dice/src/Dice.js" />
+        <option value="$PROJECT_DIR$/coinflip/src/Coin.js" />
+        <option value="$PROJECT_DIR$/coinflip/src/Coin.css" />
+        <option value="$PROJECT_DIR$/coinflip/src/App.js" />
+        <option value="$PROJECT_DIR$/coinflip/src/CoinFlipper.js" />
+        <option value="$PROJECT_DIR$/colorboxes/src/Box.css" />
+        <option value="$PROJECT_DIR$/colorboxes/src/helpers.js" />
+        <option value="$PROJECT_DIR$/colorboxes/src/App.js" />
+        <option value="$PROJECT_DIR$/colorboxes/src/BoxContainer.css" />
+        <option value="$PROJECT_DIR$/colorboxes/src/Box.js" />
+        <option value="$PROJECT_DIR$/colorboxes/src/BoxContainer.js" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
     <option name="x" value="-8" />
-    <option name="width" value="973" />
+    <option name="width" value="977" />
     <option name="height" value="1038" />
   </component>
   <component name="ProjectView">
@@ -128,7 +157,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -139,18 +167,19 @@
             <path>
               <item name="Projects" type="b2602c69:ProjectViewProjectNode" />
               <item name="Projects" type="462c0819:PsiDirectoryNode" />
-              <item name="dice" type="462c0819:PsiDirectoryNode" />
+              <item name="colorboxes" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Projects" type="b2602c69:ProjectViewProjectNode" />
               <item name="Projects" type="462c0819:PsiDirectoryNode" />
-              <item name="dice" type="462c0819:PsiDirectoryNode" />
+              <item name="colorboxes" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -184,18 +213,19 @@
       <workItem from="1571815193521" duration="1514000" />
       <workItem from="1571901116871" duration="1596000" />
       <workItem from="1572250511351" duration="2285000" />
-      <workItem from="1572336906113" duration="1498000" />
+      <workItem from="1572336906113" duration="2163000" />
+      <workItem from="1572424361496" duration="1441000" />
+      <workItem from="1572505230738" duration="3832000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="6893000" />
+    <option name="totallyTimeSpent" value="12831000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-6" y="0" width="778" height="830" extended-state="0" />
-    <editor active="true" />
+    <frame x="-6" y="0" width="781" height="830" extended-state="0" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25101215" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -207,7 +237,7 @@
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" />
-      <window_info anchor="bottom" id="Terminal" order="9" visible="true" weight="0.3295129" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="9" visible="true" weight="0.3295129" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -267,10 +297,20 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/dice/public/index.html">
+    <entry file="file://$PROJECT_DIR$/dice/src/Dice.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="425">
-          <caret line="25" column="6" selection-start-line="25" selection-start-column="6" selection-end-line="25" selection-end-column="6" />
+        <state relative-caret-position="221">
+          <caret line="13" selection-start-line="13" selection-end-line="13" />
+          <folding>
+            <element signature="e#0#39#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dice/src/Dice.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="11" column="19" selection-start-line="11" selection-start-column="19" selection-end-line="11" selection-end-column="19" />
         </state>
       </provider>
     </entry>
@@ -284,26 +324,114 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/dice/src/Dice.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="11" column="19" lean-forward="true" selection-start-line="11" selection-start-column="19" selection-end-line="11" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/dice/src/RollDice.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="165">
-          <caret line="10" column="14" lean-forward="true" selection-start-line="10" selection-start-column="14" selection-end-line="10" selection-end-column="14" />
+          <caret line="10" column="14" selection-start-line="10" selection-start-column="14" selection-end-line="10" selection-end-column="14" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/dice/src/Dice.js">
+    <entry file="file://$PROJECT_DIR$/dice/public/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="44" selection-start-line="7" selection-start-column="44" selection-end-line="7" selection-end-column="44" />
+        <state relative-caret-position="387">
+          <caret line="25" column="6" selection-start-line="25" selection-start-column="6" selection-end-line="25" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/coinflip/src/App.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="7" column="22" selection-start-line="7" selection-start-column="22" selection-end-line="7" selection-end-column="22" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/PokemonProject/pokemon/src/Pokegame.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="20" column="66" lean-forward="true" selection-start-line="20" selection-start-column="26" selection-end-line="20" selection-end-column="66" />
           <folding>
             <element signature="e#0#39#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/coinflip/src/CoinFlipper.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="19" column="12" selection-start-line="19" selection-start-column="12" selection-end-line="19" selection-end-column="12" />
+          <folding>
+            <element signature="e#0#38#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/coinflip/src/CoinFlipper.css">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/coinflip/src/Coin.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="14" selection-start-line="7" selection-start-column="8" selection-end-line="7" selection-end-column="14" />
+          <folding>
+            <element signature="e#0#38#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/coinflip/src/Coin.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="1" column="13" selection-start-line="1" selection-start-column="13" selection-end-line="1" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/colorboxes/src/helpers.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="14" selection-start-line="5" selection-start-column="14" selection-end-line="5" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/colorboxes/src/Box.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="15" selection-start-line="2" selection-start-column="15" selection-end-line="2" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/colorboxes/src/BoxContainer.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="8" selection-start-column="8" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/colorboxes/src/App.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="1" column="40" selection-start-line="1" selection-start-column="28" selection-end-line="1" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/colorboxes/src/Box.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="29" selection-start-line="4" selection-start-column="29" selection-end-line="4" selection-end-column="29" />
+          <folding>
+            <element signature="e#0#40#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/colorboxes/src/BoxContainer.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="253">
+          <caret line="16" column="5" lean-forward="true" selection-start-line="16" selection-start-column="5" selection-end-line="16" selection-end-column="5" />
+          <folding>
+            <element signature="e#0#40#0" expanded="true" />
           </folding>
         </state>
       </provider>
