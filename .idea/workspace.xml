@@ -2,162 +2,31 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c1179a60-2ced-417a-a8a0-91130b99409d" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/8-lights-out-game/package-lock.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/8-lights-out-game/package.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/8-lights-out-game/public/favicon.ico" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/8-lights-out-game/public/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/8-lights-out-game/public/manifest.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/8-lights-out-game/src/App.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/8-lights-out-game/src/App.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/8-lights-out-game/src/Board.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/8-lights-out-game/src/Board.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/8-lights-out-game/src/Cell.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/8-lights-out-game/src/Cell.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/8-lights-out-game/src/index.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/8-lights-out-game/src/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/8-lights-out-game/src/serviceWorker.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/10-yahtzee-game/package-lock.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/10-yahtzee-game/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/10-yahtzee-game/public/favicon.ico" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/10-yahtzee-game/public/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/10-yahtzee-game/public/manifest.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/10-yahtzee-game/src/App.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/10-yahtzee-game/src/App.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/10-yahtzee-game/src/App.test.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/10-yahtzee-game/src/Dice.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/10-yahtzee-game/src/Dice.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/10-yahtzee-game/src/Die.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/10-yahtzee-game/src/Die.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/10-yahtzee-game/src/Game.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/10-yahtzee-game/src/Game.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/10-yahtzee-game/src/RuleRow.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/10-yahtzee-game/src/RuleRow.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/10-yahtzee-game/src/Rules.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/10-yahtzee-game/src/Rules.test.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/10-yahtzee-game/src/ScoreTable.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/10-yahtzee-game/src/ScoreTable.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/10-yahtzee-game/src/index.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/10-yahtzee-game/src/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/10-yahtzee-game/src/registerServiceWorker.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/10-yahtzee-game/src/setUpTests.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/coinflip/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/coinflip/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/coinflip/package-lock.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/coinflip/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/coinflip/public/favicon.ico" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/coinflip/public/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/coinflip/public/logo192.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/coinflip/public/logo512.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/coinflip/public/manifest.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/coinflip/public/robots.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/coinflip/src/App.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/coinflip/src/App.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/coinflip/src/App.test.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/coinflip/src/Coin.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/coinflip/src/Coin.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/coinflip/src/CoinFlipper.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/coinflip/src/CoinFlipper.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/coinflip/src/images/head.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/coinflip/src/images/tail.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/coinflip/src/index.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/coinflip/src/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/coinflip/src/logo.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/coinflip/src/serviceWorker.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/colorboxes/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/colorboxes/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/colorboxes/package-lock.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/colorboxes/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/colorboxes/public/favicon.ico" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/colorboxes/public/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/colorboxes/public/logo192.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/colorboxes/public/logo512.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/colorboxes/public/manifest.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/colorboxes/public/robots.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/colorboxes/src/App.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/colorboxes/src/App.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/colorboxes/src/App.test.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/colorboxes/src/Box.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/colorboxes/src/Box.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/colorboxes/src/BoxContainer.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/colorboxes/src/BoxContainer.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/colorboxes/src/helpers.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/colorboxes/src/index.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/colorboxes/src/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/colorboxes/src/logo.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/colorboxes/src/serviceWorker.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dice/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dice/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dice/package-lock.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dice/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dice/public/favicon.ico" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dice/public/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dice/public/logo192.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dice/public/logo512.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dice/public/manifest.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dice/public/robots.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dice/src/App.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dice/src/App.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dice/src/App.test.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dice/src/Dice.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dice/src/Dice.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dice/src/RollDice.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dice/src/RollDice.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dice/src/index.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dice/src/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dice/src/logo.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dice/src/serviceWorker.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/fruitarray/package-lock.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/fruitarray/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/fruitarray/public/favicon.ico" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/fruitarray/public/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/fruitarray/public/logo192.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/fruitarray/public/logo512.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/fruitarray/public/manifest.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/fruitarray/public/robots.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/fruitarray/src/foods.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/fruitarray/src/helpers.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/fruitarray/src/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/hangman/2019-10-31 21_07_46-React App.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/hangman/package-lock.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/hangman/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/hangman/public/favicon.ico" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/hangman/public/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/hangman/public/manifest.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/hangman/src/0.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/hangman/src/1.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/hangman/src/2.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/hangman/src/3.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/hangman/src/4.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/hangman/src/5.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/hangman/src/6.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/hangman/src/App.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/hangman/src/App.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/hangman/src/App.test.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/hangman/src/GuessButton.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/hangman/src/Hangman.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/hangman/src/Hangman.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/hangman/src/index.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/hangman/src/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/hangman/src/registerServiceWorker.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/hangman/src/setUpTests.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/hangman/src/words.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pokemon/package-lock.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pokemon/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pokemon/public/favicon.ico" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pokemon/public/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pokemon/public/logo192.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pokemon/public/logo512.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pokemon/public/manifest.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pokemon/public/robots.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pokemon/screencapture-localhost-3001-2019-10-31-21_23_38.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pokemon/src/App.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pokemon/src/App.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pokemon/src/App.test.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pokemon/src/Pokecard.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pokemon/src/Pokecard.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pokemon/src/Pokedex.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pokemon/src/Pokedex.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pokemon/src/Pokegame.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pokemon/src/Pokegame.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pokemon/src/index.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pokemon/src/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pokemon/src/logo.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pokemon/src/serviceWorker.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/stateclicker/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/stateclicker/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/stateclicker/package-lock.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/stateclicker/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/stateclicker/public/favicon.ico" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/stateclicker/public/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/stateclicker/public/logo192.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/stateclicker/public/logo512.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/stateclicker/public/manifest.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/stateclicker/public/robots.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/stateclicker/src/App.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/stateclicker/src/App.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/stateclicker/src/App.test.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/stateclicker/src/Clicker.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/stateclicker/src/index.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/stateclicker/src/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/stateclicker/src/logo.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/stateclicker/src/serviceWorker.js" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -171,10 +40,9 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/8-lights-out-game/src/App.js">
+        <entry file="file://$PROJECT_DIR$/10-yahtzee-game/src/App.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="34">
-              <caret line="2" column="19" selection-start-line="2" selection-start-column="19" selection-end-line="2" selection-end-column="19" />
+            <state>
               <folding>
                 <element signature="e#0#41#0" expanded="true" />
               </folding>
@@ -183,63 +51,34 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/8-lights-out-game/src/Board.js">
+        <entry file="file://$PROJECT_DIR$/10-yahtzee-game/src/Game.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="192">
-              <caret line="69" column="46" selection-start-line="69" selection-start-column="46" selection-end-line="69" selection-end-column="46" />
+            <state relative-caret-position="17">
+              <caret line="33" column="53" selection-start-line="33" selection-start-column="53" selection-end-line="33" selection-end-column="53" />
+              <folding>
+                <element signature="e#0#41#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/8-lights-out-game/src/Cell.css">
+        <entry file="file://$PROJECT_DIR$/10-yahtzee-game/src/Dice.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="51">
-              <caret line="3" column="20" selection-start-line="3" selection-start-column="20" selection-end-line="3" selection-end-column="20" />
+            <state relative-caret-position="187">
+              <caret line="11" column="13" selection-start-line="11" selection-start-column="10" selection-end-line="11" selection-end-column="13" />
+              <folding>
+                <element signature="e#0#41#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/8-lights-out-game/src/Board.css">
+        <entry file="file://$PROJECT_DIR$/10-yahtzee-game/src/Die.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="240">
-              <caret line="26" column="18" selection-start-line="26" selection-start-column="18" selection-end-line="26" selection-end-column="18" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/8-lights-out-game/src/index.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="136">
-              <caret line="8" column="23" lean-forward="true" selection-start-line="8" selection-start-column="23" selection-end-line="8" selection-end-column="23" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/8-lights-out-game/src/App.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="136">
-              <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/8-lights-out-game/src/Cell.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="170">
-              <caret line="11" column="3" lean-forward="true" selection-start-line="11" selection-start-column="3" selection-end-line="11" selection-end-column="3" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/8-lights-out-game/src/index.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state>
+            <state relative-caret-position="289">
+              <caret line="17" column="33" selection-start-line="17" selection-start-column="33" selection-end-line="17" selection-end-column="33" />
               <folding>
                 <element signature="e#0#41#0" expanded="true" />
               </folding>
@@ -290,20 +129,21 @@
         <option value="$PROJECT_DIR$/8-lights-out-game/src/App.css" />
         <option value="$PROJECT_DIR$/8-lights-out-game/src/Board.js" />
         <option value="$PROJECT_DIR$/8-lights-out-game/src/Board.css" />
+        <option value="$PROJECT_DIR$/10-yahtzee-game/src/Game.js" />
+        <option value="$PROJECT_DIR$/10-yahtzee-game/src/Die.js" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="-8" />
-    <option name="width" value="922" />
-    <option name="height" value="1038" />
+    <option name="x" value="-10" />
+    <option name="width" value="1074" />
+    <option name="height" value="1040" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -314,18 +154,19 @@
             <path>
               <item name="Projects" type="b2602c69:ProjectViewProjectNode" />
               <item name="Projects" type="462c0819:PsiDirectoryNode" />
-              <item name="8-lights-out-game" type="462c0819:PsiDirectoryNode" />
+              <item name="10-yahtzee-game" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Projects" type="b2602c69:ProjectViewProjectNode" />
               <item name="Projects" type="462c0819:PsiDirectoryNode" />
-              <item name="8-lights-out-game" type="462c0819:PsiDirectoryNode" />
+              <item name="10-yahtzee-game" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -367,16 +208,18 @@
       <workItem from="1572648769537" duration="135000" />
       <workItem from="1572781226355" duration="186000" />
       <workItem from="1573068636572" duration="3453000" />
+      <workItem from="1573304819188" duration="24000" />
+      <workItem from="1573633694848" duration="1625000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="21849000" />
+    <option name="totallyTimeSpent" value="23498000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-6" y="0" width="737" height="830" extended-state="0" />
+    <frame x="-8" y="0" width="859" height="832" extended-state="0" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24285714" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.20681265" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -388,7 +231,7 @@
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" />
-      <window_info anchor="bottom" id="Terminal" order="9" visible="true" weight="0.3295129" />
+      <window_info anchor="bottom" id="Terminal" order="9" visible="true" weight="0.32857144" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -428,15 +271,6 @@
     <entry file="file://$PROJECT_DIR$/hangman/src/App.js" />
     <entry file="file://$PROJECT_DIR$/hangman/src/GuessButton.js" />
     <entry file="file://$PROJECT_DIR$/hangman/src/words.js" />
-    <entry file="file://$PROJECT_DIR$/8-lights-out-game/src/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <folding>
-            <element signature="e#0#41#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/8-lights-out-game/src/App.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="34">
@@ -447,10 +281,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/8-lights-out-game/src/Cell.js">
+    <entry file="file://$PROJECT_DIR$/8-lights-out-game/src/Board.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="11" column="3" lean-forward="true" selection-start-line="11" selection-start-column="3" selection-end-line="11" selection-end-column="3" />
+        <state relative-caret-position="1122">
+          <caret line="69" column="46" selection-start-line="69" selection-start-column="46" selection-end-line="69" selection-end-column="46" />
         </state>
       </provider>
     </entry>
@@ -461,31 +295,94 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/8-lights-out-game/src/Board.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="442">
+          <caret line="26" column="18" selection-start-line="26" selection-start-column="18" selection-end-line="26" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/8-lights-out-game/src/index.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="136">
-          <caret line="8" column="23" lean-forward="true" selection-start-line="8" selection-start-column="23" selection-end-line="8" selection-end-column="23" />
+          <caret line="8" column="23" selection-start-line="8" selection-start-column="23" selection-end-line="8" selection-end-column="23" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/8-lights-out-game/src/App.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="136">
-          <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
+          <caret line="8" selection-start-line="8" selection-end-line="8" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/8-lights-out-game/src/Board.js">
+    <entry file="file://$PROJECT_DIR$/8-lights-out-game/src/Cell.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="192">
-          <caret line="69" column="46" selection-start-line="69" selection-start-column="46" selection-end-line="69" selection-end-column="46" />
+        <state relative-caret-position="170">
+          <caret line="11" column="3" selection-start-line="11" selection-start-column="3" selection-end-line="11" selection-end-column="3" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/8-lights-out-game/src/Board.css">
+    <entry file="file://$PROJECT_DIR$/8-lights-out-game/src/index.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/10-yahtzee-game/src/App.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="26" column="18" selection-start-line="26" selection-start-column="18" selection-end-line="26" selection-end-column="18" />
+        <state>
+          <folding>
+            <element signature="e#0#41#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/10-yahtzee-game/src/registerServiceWorker.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/10-yahtzee-game/src/RuleRow.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="e#0#41#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/10-yahtzee-game/src/ScoreTable.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="e#0#41#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/10-yahtzee-game/src/Game.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="33" column="53" selection-start-line="33" selection-start-column="53" selection-end-line="33" selection-end-column="53" />
+          <folding>
+            <element signature="e#0#41#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/10-yahtzee-game/src/Dice.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="11" column="13" selection-start-line="11" selection-start-column="10" selection-end-line="11" selection-end-column="13" />
+          <folding>
+            <element signature="e#0#41#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/10-yahtzee-game/src/Die.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="17" column="33" selection-start-line="17" selection-start-column="33" selection-end-line="17" selection-end-column="33" />
+          <folding>
+            <element signature="e#0#41#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
