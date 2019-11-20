@@ -1,0 +1,15 @@
+.App {
+  font-family: sans-serif;
+  text-align: center;
+}
+
+.active-link {
+  color: red !important;
+  text-decoration-line: underline !important;
+}
+
+.NavLink {
+  color: black;
+  text-decoration: none;
+  margin: 5px;
+}
