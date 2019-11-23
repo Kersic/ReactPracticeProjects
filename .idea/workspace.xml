@@ -1,14 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="c1179a60-2ced-417a-a8a0-91130b99409d" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/10-yahtzee-game/src/Dice.js" beforeDir="false" afterPath="$PROJECT_DIR$/10-yahtzee-game/src/Dice.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/10-yahtzee-game/src/Die.css" beforeDir="false" afterPath="$PROJECT_DIR$/10-yahtzee-game/src/Die.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/10-yahtzee-game/src/Die.js" beforeDir="false" afterPath="$PROJECT_DIR$/10-yahtzee-game/src/Die.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/10-yahtzee-game/src/Game.js" beforeDir="false" afterPath="$PROJECT_DIR$/10-yahtzee-game/src/Game.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/10-yahtzee-game/src/ScoreTable.js" beforeDir="false" afterPath="$PROJECT_DIR$/10-yahtzee-game/src/ScoreTable.js" afterDir="false" />
-    </list>
+    <list default="true" id="c1179a60-2ced-417a-a8a0-91130b99409d" name="Default Changelist" comment="" />
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
     <ignored path="$PROJECT_DIR$/tmp/" />
@@ -32,14 +25,23 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/10-yahtzee-game/src/ScoreTable.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="272">
-              <caret line="16" column="5" lean-forward="true" selection-start-line="16" selection-start-column="5" selection-end-line="16" selection-end-column="5" />
+              <caret line="16" column="5" selection-start-line="16" selection-start-column="5" selection-end-line="16" selection-end-column="5" />
               <folding>
                 <element signature="e#0#41#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/8-lights-out-game/src/Board.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="402">
+              <caret line="69" column="46" selection-start-line="69" selection-start-column="46" selection-end-line="69" selection-end-column="46" />
             </state>
           </provider>
         </entry>
@@ -137,7 +139,7 @@
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="-10" />
     <option name="width" value="975" />
     <option name="height" value="1040" />
@@ -226,14 +228,15 @@
       <workItem from="1574152812997" duration="1207000" />
       <workItem from="1574183915154" duration="630000" />
       <workItem from="1574187883272" duration="155000" />
+      <workItem from="1574323937901" duration="1178000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="36776000" />
+    <option name="totallyTimeSpent" value="37954000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="0" width="780" height="832" extended-state="0" />
+    <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" weight="0.23252688" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -247,7 +250,7 @@
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="9" visible="true" weight="0.32857144" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="9" visible="true" weight="0.32719547" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -312,13 +315,6 @@
           <folding>
             <element signature="e#0#41#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/8-lights-out-game/src/Board.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1122">
-          <caret line="69" column="46" selection-start-line="69" selection-start-column="46" selection-end-line="69" selection-end-column="46" />
         </state>
       </provider>
     </entry>
@@ -475,10 +471,17 @@
     <entry file="file://$PROJECT_DIR$/10-yahtzee-game/src/ScoreTable.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="272">
-          <caret line="16" column="5" lean-forward="true" selection-start-line="16" selection-start-column="5" selection-end-line="16" selection-end-column="5" />
+          <caret line="16" column="5" selection-start-line="16" selection-start-column="5" selection-end-line="16" selection-end-column="5" />
           <folding>
             <element signature="e#0#41#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/8-lights-out-game/src/Board.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="402">
+          <caret line="69" column="46" selection-start-line="69" selection-start-column="46" selection-end-line="69" selection-end-column="46" />
         </state>
       </provider>
     </entry>
