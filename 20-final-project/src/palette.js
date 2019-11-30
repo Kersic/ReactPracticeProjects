@@ -2,7 +2,7 @@ import React from "react";
 import ColorBox from "./colorBox";
 
 function Palette({ palette }) {
-  const style = {
+  const classes = {
     palette: {
       height: "100vh"
     },
@@ -11,9 +11,9 @@ function Palette({ palette }) {
     }
   };
   return (
-    <div className="Palette" style={style.palette}>
+    <div className="palette" style={classes.palette}>
       {/* navbar */}
-      <div className="PaletteColors" style={style.paletteColors}>
+      <div className="paletteColors" style={classes.paletteColors}>
         {palette.colors.map(color => (
           <ColorBox color={color} />
         ))}
