@@ -5,10 +5,26 @@ import Navbar from "./navbar";
 
 const useStyles = createUseStyles({
   palette: {
-    height: "100vh"
+    height: "100vh",
+    display: "flex",
+    flexDirection: "column"
   },
   paletteColors: {
     height: "100vh"
+  },
+  paletteFooter: {
+    backgroundColor: "white",
+    height: "5vh",
+    display: "flex",
+    justifyContent: "flex-end",
+    fontWeight: "bold",
+    alignItems: "center",
+    fontFamily: "Roboto",
+    fontSize: "11px"
+  },
+  emoji: {
+    fontSize: "11px",
+    margin: "0 1rem"
   }
 });
 
@@ -35,10 +51,13 @@ function Palette({ palette }) {
       />
       <div className={classes.paletteColors}>
         {palette.colors[level].map(color => (
-          <ColorBox fr color={color[format]} name={color.name} />
+          <ColorBox color={color[format]} name={color.name} key={color.id} />
         ))}
       </div>
-      {/* footer */}
+      <footer className={classes.paletteFooter}>
+        {palette.paletteName}
+        <span className={classes.emoji}>{palette.emoji}</span>
+      </footer>
     </div>
   );
 }
