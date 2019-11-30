@@ -10,6 +10,27 @@ const useStyles = createUseStyles({
   },
   paletteColors: {
     height: "100vh"
+  },
+  slider: {
+    width: "340px",
+    margin: "0 10px",
+    display: "inline-block",
+    "& .rc-slider-track": {
+      backgroundColor: "transparent"
+    },
+    "& .rc-slider-rail": {
+      height: "8px"
+    },
+    "& .rc-slider-handle, .rc-slider-handle:active, .rc-slider-handle:focus,.rc-slider-handle:hover": {
+      backgroundColor: "green",
+      outline: "none",
+      border: "2px solid green",
+      boxShadow: "none",
+      width: "13px",
+      height: "13px",
+      marginLeft: "-7px",
+      marginTop: "-3px"
+    }
   }
 });
 
@@ -24,13 +45,16 @@ function Palette({ palette }) {
   return (
     <div className={classes.palette}>
       {/* navbar */}
-      <Slider
-        defaultValue={level}
-        min={100}
-        max={900}
-        step={100}
-        onAfterChange={changeLevel}
-      />
+      <div className={classes.slider}>
+        <Slider
+          defaultValue={level}
+          min={100}
+          max={900}
+          step={100}
+          onAfterChange={changeLevel}
+        />
+      </div>
+
       <div className={classes.paletteColors}>
         {palette.colors[level].map(color => (
           <ColorBox color={color.hex} name={color.name} />
