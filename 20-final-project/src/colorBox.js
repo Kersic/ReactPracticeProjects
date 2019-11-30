@@ -115,7 +115,7 @@ const useStyles = createUseStyles({
   }
 });
 
-function ColorBox({ color }) {
+function ColorBox({ color, name }) {
   const classes = useStyles();
   const [showOverlay, setShowOverlay] = useState(false);
   useEffect(() => {
@@ -126,22 +126,22 @@ function ColorBox({ color }) {
     setShowOverlay(true);
   };
   return (
-    <CopyToClipboard text={color.color} onCopy={changeOverlayState}>
-      <div className={classes.colorBox} style={{ background: color.color }}>
+    <CopyToClipboard text={color} onCopy={changeOverlayState}>
+      <div className={classes.colorBox} style={{ background: color }}>
         <div
           className={`${classes.copyOverlay} ${showOverlay &&
             classes.copyOverlayShow}`}
-          style={{ background: color.color }}
+          style={{ background: color }}
         />
         <div
           className={`${classes.copyMsg} ${showOverlay && classes.copyMsgShow}`}
         >
           <h1>Copied!</h1>
-          <p>{color.color}</p>
+          <p>{color}</p>
         </div>
         <div className="copyContainer">
           <div className={classes.boxContent}>
-            <span>{color.name}</span>
+            <span>{name}</span>
           </div>
           <button id="copyButton" className={classes.copyButton}>
             Copy
