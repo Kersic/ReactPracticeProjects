@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { createUseStyles } from "react-jss";
+import { withStyles } from "@material-ui/styles";
 import { Link } from "react-router-dom";
 import Slider from "rc-slider";
 import Select from "@material-ui/core/Select";
@@ -9,7 +9,7 @@ import CloseIcon from "@material-ui/icons/Close";
 import IconButton from "@material-ui/core/IconButton";
 import "rc-slider/assets/index.css";
 
-const useStyles = createUseStyles({
+const styles = {
   navbar: {
     display: "flex",
     alignItems: "center",
@@ -56,10 +56,9 @@ const useStyles = createUseStyles({
     marginLeft: "auto",
     marginRight: "1rem"
   }
-});
+};
 
-function Navbar({ level, changeLevel, changeFormat, format }) {
-  const classes = useStyles();
+function Navbar({ classes, level, changeLevel, changeFormat, format }) {
   const [alertOpen, setAlertOpen] = useState(false);
 
   const handleChange = e => {
@@ -119,4 +118,4 @@ function Navbar({ level, changeLevel, changeFormat, format }) {
   );
 }
 
-export default Navbar;
+export default withStyles(styles)(Navbar);

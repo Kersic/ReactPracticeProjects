@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from "react";
-import { createUseStyles } from "react-jss";
+import { withStyles } from "@material-ui/styles";
 import { CopyToClipboard } from "react-copy-to-clipboard";
 
-const useStyles = createUseStyles({
+const styles = {
   colorBox: {
     width: "20%",
     height: "25%",
@@ -113,10 +113,9 @@ const useStyles = createUseStyles({
     transition: "all 0.4s ease-in-out",
     transitionDelay: "0.3s"
   }
-});
+};
 
-function ColorBox({ color, name }) {
-  const classes = useStyles();
+function ColorBox({ classes, color, name }) {
   const [showOverlay, setShowOverlay] = useState(false);
   useEffect(() => {
     setTimeout(() => setShowOverlay(false), 1500);
@@ -153,4 +152,4 @@ function ColorBox({ color, name }) {
   );
 }
 
-export default ColorBox;
+export default withStyles(styles)(ColorBox);

@@ -1,9 +1,9 @@
 import React, { useState } from "react";
-import { createUseStyles } from "react-jss";
+import { withStyles } from "@material-ui/styles";
 import ColorBox from "./colorBox";
 import Navbar from "./navbar";
 
-const useStyles = createUseStyles({
+const styles = {
   palette: {
     height: "100vh",
     display: "flex",
@@ -26,10 +26,9 @@ const useStyles = createUseStyles({
     fontSize: "11px",
     margin: "0 1rem"
   }
-});
+};
 
-function Palette({ palette }) {
-  const classes = useStyles();
+function Palette({ classes, palette }) {
   const [level, setLevel] = useState(500);
   const [format, setFormat] = useState("hex");
 
@@ -62,4 +61,4 @@ function Palette({ palette }) {
   );
 }
 
-export default Palette;
+export default withStyles(styles)(Palette);
