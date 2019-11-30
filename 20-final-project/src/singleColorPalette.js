@@ -1,6 +1,8 @@
 import React, { useState, useEffect } from "react";
 import { withStyles } from "@material-ui/styles";
 import ColorBox from "./colorBox";
+import Navbar from "./navbar";
+import Fotter from "./fotter";
 
 const styles = {
   palette: {
@@ -15,19 +17,26 @@ const styles = {
 
 function SingleColorPalette({ classes, palette, colorId }) {
   const [shades, setShades] = useState(gatherShades(palette, colorId));
+  const [format, setFormat] = useState("hex");
+
+  const changeFormat = newFormat => {
+    setFormat(newFormat);
+  };
 
   return (
-    <div className={classes.paletteColors}>
+    <div className={classes.palette}>
+      <Navbar format={format} changeFormat={changeFormat} />
       <div className={classes.paletteColors}>
         {shades.map(color => (
           <ColorBox
-            color={color.hex}
+            color={color[format]}
             key={color.id}
             name={color.name}
             showLink={false}
           />
         ))}
       </div>
+      <Fotter palette={palette} />
     </div>
   );
 }
@@ -40,7 +49,7 @@ const gatherShades = (palette, colorId) => {
       allColors[key].filter(color => color.id === colorId)
     );
   }
-  return allShades;
+  return allShades.slice(1);
 };
 
 export default withStyles(styles)(SingleColorPalette);

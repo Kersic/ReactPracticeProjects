@@ -73,18 +73,21 @@ function Navbar({ classes, level, changeLevel, changeFormat, format }) {
       <div className={classes.logo}>
         <Link to="/">ReactColorPicker</Link>
       </div>
-      <div className={classes.sliderContainer}>
-        <span>Level: {level}</span>
-        <div className={classes.slider}>
-          <Slider
-            defaultValue={level}
-            min={100}
-            max={900}
-            step={100}
-            onAfterChange={changeLevel}
-          />
+      {level && (
+        <div className={classes.sliderContainer}>
+          <span>Level: {level}</span>
+          <div className={classes.slider}>
+            <Slider
+              defaultValue={level}
+              min={100}
+              max={900}
+              step={100}
+              onAfterChange={changeLevel}
+            />
+          </div>
         </div>
-      </div>
+      )}
+
       <div className={classes.selectContainer}>
         <Select value={format} onChange={handleChange}>
           <MenuItem value="hex">HEX - #ffffff</MenuItem>

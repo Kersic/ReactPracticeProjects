@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { withStyles } from "@material-ui/styles";
 import ColorBox from "./colorBox";
 import Navbar from "./navbar";
+import Fotter from "./fotter";
 
 const styles = {
   palette: {
@@ -11,20 +12,6 @@ const styles = {
   },
   paletteColors: {
     height: "100vh"
-  },
-  paletteFooter: {
-    backgroundColor: "white",
-    height: "5vh",
-    display: "flex",
-    justifyContent: "flex-end",
-    fontWeight: "bold",
-    alignItems: "center",
-    fontFamily: "Roboto",
-    fontSize: "11px"
-  },
-  emoji: {
-    fontSize: "11px",
-    margin: "0 1rem"
   }
 };
 
@@ -60,10 +47,7 @@ function Palette({ classes, palette }) {
           />
         ))}
       </div>
-      <footer className={classes.paletteFooter}>
-        {palette.paletteName}
-        <span className={classes.emoji}>{palette.emoji}</span>
-      </footer>
+      <Fotter palette={palette} />
     </div>
   );
 }
