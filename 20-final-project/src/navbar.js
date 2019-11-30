@@ -1,6 +1,8 @@
-import React from "react";
+import React, { useState } from "react";
 import { createUseStyles } from "react-jss";
 import Slider from "rc-slider";
+import Select from "@material-ui/core/Select";
+import MenuItem from "@material-ui/core/MenuItem";
 import "rc-slider/assets/index.css";
 
 const useStyles = createUseStyles({
@@ -48,8 +50,11 @@ const useStyles = createUseStyles({
   }
 });
 
-function Navbar({ level, changeLevel }) {
+function Navbar({ level, changeLevel, changeFormat, format }) {
   const classes = useStyles();
+  const handleChange = e => {
+    changeFormat(e.target.value);
+  };
   return (
     <header className={classes.navbar}>
       <div className={classes.logo}>
@@ -66,6 +71,13 @@ function Navbar({ level, changeLevel }) {
             onAfterChange={changeLevel}
           />
         </div>
+      </div>
+      <div className={classes.selectContainer}>
+        <Select value={format} onChange={handleChange}>
+          <MenuItem value="hex">HEX - #ffffff</MenuItem>
+          <MenuItem value="rgb">RGB - rgb(255, 255, 255)</MenuItem>
+          <MenuItem value="rgba">RGBA - rgba(255, 255, 255 1.0)</MenuItem>
+        </Select>
       </div>
     </header>
   );

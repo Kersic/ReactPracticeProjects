@@ -15,17 +15,27 @@ const useStyles = createUseStyles({
 function Palette({ palette }) {
   const classes = useStyles();
   const [level, setLevel] = useState(500);
+  const [format, setFormat] = useState("hex");
 
   const changeLevel = newLevel => {
     setLevel(newLevel);
   };
 
+  const changeFormat = newFormat => {
+    setFormat(newFormat);
+  };
+
   return (
     <div className={classes.palette}>
-      <Navbar level={level} changeLevel={changeLevel} />
+      <Navbar
+        level={level}
+        changeLevel={changeLevel}
+        changeFormat={changeFormat}
+        format={format}
+      />
       <div className={classes.paletteColors}>
         {palette.colors[level].map(color => (
-          <ColorBox color={color.hex} name={color.name} />
+          <ColorBox fr color={color[format]} name={color.name} />
         ))}
       </div>
       {/* footer */}
