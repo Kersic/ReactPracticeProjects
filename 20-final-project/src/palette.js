@@ -1,5 +1,6 @@
 import React from "react";
 import ColorBox from "./colorBox";
+import { generatePalette } from "./colorHelpers";
 
 function Palette({ palette }) {
   const classes = {
@@ -10,6 +11,7 @@ function Palette({ palette }) {
       height: "100vh"
     }
   };
+  console.log(generatePalette(palette));
   return (
     <div className="palette" style={classes.palette}>
       {/* navbar */}
