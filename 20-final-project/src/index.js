@@ -3,6 +3,7 @@ import ReactDOM from "react-dom";
 import Pallete from "./palette";
 import seedPalettes from "./seedPalettes";
 import { generatePalette } from "./colorHelpers";
+import "./index.css";
 
 function App() {
   return (
