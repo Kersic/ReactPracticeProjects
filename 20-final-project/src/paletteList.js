@@ -1,5 +1,5 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { Link, withRouter } from "react-router-dom";
 import MiniPalette from "./miniPalette";
 import { withStyles } from "@material-ui/styles";
 
@@ -44,7 +44,10 @@ const styles = {
   }
 };
 
-function PalleteList({ classes, palettes }) {
+function PalleteList({ classes, history, palettes }) {
+  const goToPalette = id => {
+    history.push("/palette/" + id);
+  };
   return (
     <div className={classes.paletteList}>
       <div className={classes.containter}>
@@ -53,7 +56,7 @@ function PalleteList({ classes, palettes }) {
         </nav>
         <div className={classes.palettes}>
           {palettes.map(palette => (
-            <MiniPalette palette={palette} />
+            <MiniPalette palette={palette} goToPalette={goToPalette} />
           ))}
         </div>
       </div>
@@ -61,4 +64,4 @@ function PalleteList({ classes, palettes }) {
   );
 }
 
-export default withStyles(styles)(PalleteList);
+export default withStyles(styles)(withRouter(PalleteList));

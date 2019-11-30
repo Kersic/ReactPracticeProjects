@@ -45,9 +45,12 @@ const styles = {
   }
 };
 
-function MiniPalette({ classes, palette }) {
+function MiniPalette({ classes, palette, goToPalette }) {
   return (
-    <div className={classes.miniPalette}>
+    <div
+      className={classes.miniPalette}
+      onClick={() => goToPalette(palette.id)}
+    >
       <div className={classes.colors}>
         {palette.colors.map(color => (
           <div
