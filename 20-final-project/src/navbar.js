@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { createUseStyles } from "react-jss";
+import { Link } from "react-router-dom";
 import Slider from "rc-slider";
 import Select from "@material-ui/core/Select";
 import MenuItem from "@material-ui/core/MenuItem";
@@ -71,7 +72,7 @@ function Navbar({ level, changeLevel, changeFormat, format }) {
   return (
     <header className={classes.navbar}>
       <div className={classes.logo}>
-        <a href="/">ReactColorPicker</a>
+        <Link to="/">ReactColorPicker</Link>
       </div>
       <div className={classes.sliderContainer}>
         <span>Level: {level}</span>

@@ -2,6 +2,7 @@ import React from "react";
 import ReactDOM from "react-dom";
 import { BrowserRouter, Route, Switch } from "react-router-dom";
 import Pallete from "./palette";
+import PalleteList from "./paletteList";
 import seedPalettes from "./seedPalettes";
 import { generatePalette } from "./colorHelpers";
 import "./index.css";
@@ -14,7 +15,11 @@ function App() {
   return (
     <div className="App">
       <Switch>
-        <Route exact path="/" render={() => <p>all palets</p>} />
+        <Route
+          exact
+          path="/"
+          render={() => <PalleteList palettes={seedPalettes} />}
+        />
         <Route
           exact
           path="/palette/:id"
