@@ -116,7 +116,7 @@ const styles = {
   }
 };
 
-function ColorBox({ classes, color, name, colorId, paletteId }) {
+function ColorBox({ classes, color, name, colorId, paletteId, showLink }) {
   const [showOverlay, setShowOverlay] = useState(false);
   useEffect(() => {
     setTimeout(() => setShowOverlay(false), 1500);
@@ -147,12 +147,14 @@ function ColorBox({ classes, color, name, colorId, paletteId }) {
             Copy
           </button>
         </div>
-        <Link
-          to={"/palette/" + paletteId + "/" + colorId}
-          onClick={e => e.stopPropagation()}
-        >
-          <span className={classes.moreButton}>MORE</span>
-        </Link>
+        {showLink && (
+          <Link
+            to={"/palette/" + paletteId + "/" + colorId}
+            onClick={e => e.stopPropagation()}
+          >
+            <span className={classes.moreButton}>MORE</span>
+          </Link>
+        )}
       </div>
     </CopyToClipboard>
   );
