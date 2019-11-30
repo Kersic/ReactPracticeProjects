@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { withStyles } from "@material-ui/styles";
+import { Link } from "react-router-dom";
 import { CopyToClipboard } from "react-copy-to-clipboard";
 
 const styles = {
@@ -115,7 +116,7 @@ const styles = {
   }
 };
 
-function ColorBox({ classes, color, name }) {
+function ColorBox({ classes, color, name, colorId, paletteId }) {
   const [showOverlay, setShowOverlay] = useState(false);
   useEffect(() => {
     setTimeout(() => setShowOverlay(false), 1500);
@@ -146,7 +147,12 @@ function ColorBox({ classes, color, name }) {
             Copy
           </button>
         </div>
-        <span className={classes.moreButton}>MORE</span>
+        <Link
+          to={"/palette/" + paletteId + "/" + colorId}
+          onClick={e => e.stopPropagation()}
+        >
+          <span className={classes.moreButton}>MORE</span>
+        </Link>
       </div>
     </CopyToClipboard>
   );

@@ -3,6 +3,7 @@ import ReactDOM from "react-dom";
 import { BrowserRouter, Route, Switch } from "react-router-dom";
 import Pallete from "./palette";
 import PalleteList from "./paletteList";
+import SingleColorPalette from "./singleColorPalette";
 import seedPalettes from "./seedPalettes";
 import { generatePalette } from "./colorHelpers";
 import "./index.css";
@@ -28,6 +29,11 @@ function App() {
               palette={generatePalette(findPalette(routeProps.match.params.id))}
             />
           )}
+        />
+        <Route
+          exact
+          path="/palette/:PalrttrId/:colorId"
+          render={() => <SingleColorPalette />}
         />
       </Switch>
 
