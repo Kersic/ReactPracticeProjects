@@ -14,6 +14,7 @@ import ChevronLeftIcon from "@material-ui/icons/ChevronLeft";
 import Button from "@material-ui/core/Button";
 import DragableColorBox from "../dragableColorBox/dragableColorBox";
 import { ValidatorForm, TextValidator } from "react-material-ui-form-validator";
+import { withRouter } from "react-router-dom";
 
 const drawerWidth = 400;
 
@@ -75,10 +76,10 @@ const styles = theme => ({
   }
 });
 
-function NewPaletteForm({ classes }) {
+function NewPaletteForm({ classes, history, savePalette }) {
   const [open, setOpen] = useState(true);
   const [currentColor, setCurrentColor] = useState("teal");
-  const [colors, setColors] = useState([{ name: "test", color: "purple" }]);
+  const [colors, setColors] = useState([]);
   const [currentName, setCurrentName] = useState("");
 
   useEffect(() => {
@@ -110,12 +111,23 @@ function NewPaletteForm({ classes }) {
   const handleChangeName = evt => {
     setCurrentName(evt.target.value);
   };
+  const handleSavePalette = () => {
+    let newName = "Teat palette";
+    const newPalette = {
+      paletteName: newName,
+      id: newName.toLocaleLowerCase().replace(/ /g, "-"),
+      colors: colors
+    };
+    savePalette(newPalette);
+    history.push("/");
+  };
 
   return (
     <div className={classes.root}>
       <CssBaseline />
       <AppBar
         position="fixed"
+        color="default"
         className={classNames(classes.appBar, {
           [classes.appBarShift]: open
         })}
@@ -132,6 +144,13 @@ function NewPaletteForm({ classes }) {
           <Typography variant="h6" color="inherit" noWrap>
             Persistent drawer
           </Typography>
+          <Button
+            variant="contained"
+            color="primary"
+            onClick={handleSavePalette}
+          >
+            Save Palette
+          </Button>
         </Toolbar>
       </AppBar>
       <Drawer
@@ -197,4 +216,6 @@ function NewPaletteForm({ classes }) {
     </div>
   );
 }
-export default withStyles(styles, { withTheme: true })(NewPaletteForm);
+export default withStyles(styles, { withTheme: true })(
+  withRouter(NewPaletteForm)
+);
