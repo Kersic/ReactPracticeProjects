@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import { withStyles } from "@material-ui/styles";
 import { Link } from "react-router-dom";
 import { CopyToClipboard } from "react-copy-to-clipboard";
+import chroma from "chroma-js";
 
 const styles = {
   colorBox: {
@@ -92,7 +93,6 @@ const styles = {
     fontSize: "2rem",
     transform: "scale(0.1)",
     opacity: "0",
-    color: "white",
     "& h1": {
       fontWeight: "400",
       background: "rgba(255, 255, 255, 0.2)",
@@ -116,6 +116,12 @@ const styles = {
     zIndex: "25",
     transition: "all 0.4s ease-in-out",
     transitionDelay: "0.3s"
+  },
+  lightText: {
+    color: "white"
+  },
+  darkText: {
+    color: "rgba(0,0,0, 0.7)"
   }
 };
 
@@ -128,6 +134,7 @@ function ColorBox({
   singleColorPalette
 }) {
   const [showOverlay, setShowOverlay] = useState(false);
+  const isDarkColor = chroma(color).luminance() <= 0.5;
   useEffect(() => {
     setTimeout(() => setShowOverlay(false), 1500);
   }, [showOverlay]);
@@ -143,21 +150,31 @@ function ColorBox({
         style={{ background: color }}
       >
         <div
-          className={`${classes.copyOverlay} ${showOverlay &&
-            classes.copyOverlayShow}`}
+          className={`${classes.copyOverlay} 
+          ${showOverlay && classes.copyOverlayShow}`}
           style={{ background: color }}
         />
         <div
-          className={`${classes.copyMsg} ${showOverlay && classes.copyMsgShow}`}
+          className={`${classes.copyMsg} 
+          ${showOverlay && classes.copyMsgShow}
+          ${isDarkColor ? classes.lightText : classes.darkText}`}
         >
           <h1>Copied!</h1>
           <p>{color}</p>
         </div>
         <div className="copyContainer">
-          <div className={classes.boxContent}>
+          <div
+            className={`${classes.boxContent} ${isDarkColor &&
+              classes.lightText}`}
+          >
             <span>{name}</span>
           </div>
-          <button id="copyButton" className={classes.copyButton}>
+          <button
+            id="copyButton"
+            className={`${classes.copyButton} ${
+              isDarkColor ? classes.lightText : classes.darkText
+            }`}
+          >
             Copy
           </button>
         </div>
@@ -166,7 +183,13 @@ function ColorBox({
             to={"/palette/" + paletteId + "/" + colorId}
             onClick={e => e.stopPropagation()}
           >
-            <span className={classes.moreButton}>MORE</span>
+            <span
+              className={`${classes.moreButton} ${
+                isDarkColor ? classes.lightText : classes.darkText
+              }`}
+            >
+              MORE
+            </span>
           </Link>
         )}
       </div>
