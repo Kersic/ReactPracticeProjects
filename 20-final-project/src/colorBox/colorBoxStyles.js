@@ -1,4 +1,6 @@
 import chroma from "chroma-js";
+import { TEXT_COLOR_BREAKPOINT } from "../constants";
+const textColorBrakPoint = TEXT_COLOR_BREAKPOINT;
 
 export default {
   colorBox: {
@@ -37,7 +39,9 @@ export default {
       opacity: "1"
     },
     color: props =>
-      chroma(props.color).luminance() <= 0.5 ? "white" : "rgba(0,0,0,0.7)"
+      chroma(props.color).luminance() <= textColorBrakPoint
+        ? "white"
+        : "rgba(0,0,0,0.7)"
   },
   boxContent: {
     position: "absolute",
@@ -50,7 +54,9 @@ export default {
     textTransform: "uppercase",
     fontSize: "12px",
     color: props =>
-      chroma(props.color).luminance() <= 0.5 ? "white" : "rgba(0,0,0,0.7)"
+      chroma(props.color).luminance() <= textColorBrakPoint
+        ? "white"
+        : "rgba(0,0,0,0.7)"
   },
   moreButton: {
     background: "rgba(255,255,255,0.3)",
@@ -64,7 +70,9 @@ export default {
     textAlign: "center",
     lineHeight: "30px",
     color: props =>
-      chroma(props.color).luminance() <= 0.5 ? "white" : "rgba(0,0,0,0.7)"
+      chroma(props.color).luminance() <= textColorBrakPoint
+        ? "white"
+        : "rgba(0,0,0,0.7)"
   },
   copyOverlay: {
     opacity: "0",
@@ -93,7 +101,9 @@ export default {
     transform: "scale(0.1)",
     opacity: "0",
     color: props =>
-      chroma(props.color).luminance() <= 0.5 ? "white" : "rgba(0,0,0,0.7)",
+      chroma(props.color).luminance() <= textColorBrakPoint
+        ? "white"
+        : "rgba(0,0,0,0.7)",
     "& h1": {
       fontWeight: "400",
       background: "rgba(255, 255, 255, 0.2)",
