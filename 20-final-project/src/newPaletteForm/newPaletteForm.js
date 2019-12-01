@@ -12,7 +12,9 @@ import IconButton from "@material-ui/core/IconButton";
 import MenuIcon from "@material-ui/icons/Menu";
 import ChevronLeftIcon from "@material-ui/icons/ChevronLeft";
 import Button from "@material-ui/core/Button";
-import DragableColorBox from "../dragableColorBox/dragableColorBox";
+import DragableColorList from "../dragableColorList/dragableColorList";
+import { arrayMove } from "react-sortable-hoc";
+
 import { ValidatorForm, TextValidator } from "react-material-ui-form-validator";
 import { withRouter } from "react-router-dom";
 
@@ -132,6 +134,10 @@ function NewPaletteForm({ classes, history, savePalette, palettes }) {
     setColors(colors.filter(color => color.name !== name));
   };
 
+  const onSortEnd = ({ oldIndex, newIndex }) => {
+    setColors(arrayMove(colors, oldIndex, newIndex));
+  };
+
   return (
     <div className={classes.root}>
       <CssBaseline />
@@ -226,14 +232,12 @@ function NewPaletteForm({ classes, history, savePalette, palettes }) {
         })}
       >
         <div className={classes.drawerHeader} />
-
-        {colors.map(color => (
-          <DragableColorBox
-            key={color.name}
-            color={color}
-            removeColor={removeColor}
-          />
-        ))}
+        <DragableColorList
+          axis="xy"
+          colors={colors}
+          removeColor={removeColor}
+          onSortEnd={onSortEnd}
+        />
       </main>
     </div>
   );
