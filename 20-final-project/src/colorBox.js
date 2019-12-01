@@ -7,7 +7,7 @@ import chroma from "chroma-js";
 const styles = {
   colorBox: {
     width: "20%",
-    height: "25%",
+    height: props => (props.singleColorPalette ? "50%" : "25%"),
     margin: "0 auto",
     display: "inline-block",
     position: "relative",
@@ -18,9 +18,6 @@ const styles = {
     },
     marginBottom: "-3.5px",
     fontFamily: "verdana"
-  },
-  singleColorPalette: {
-    height: "50%"
   },
   copyButton: {
     width: "100px",
@@ -42,7 +39,9 @@ const styles = {
     opacity: "0",
     "&:hover": {
       opacity: "1"
-    }
+    },
+    color: props =>
+      chroma(props.color).luminance() <= 0.5 ? "white" : "rgba(0,0,0,0.7)"
   },
   boxContent: {
     position: "absolute",
@@ -53,7 +52,9 @@ const styles = {
     color: "black",
     letterSpacing: "1px",
     textTransform: "uppercase",
-    fontSize: "12px"
+    fontSize: "12px",
+    color: props =>
+      chroma(props.color).luminance() <= 0.5 ? "white" : "rgba(0,0,0,0.7)"
   },
   moreButton: {
     background: "rgba(255,255,255,0.3)",
@@ -65,7 +66,9 @@ const styles = {
     width: "60px",
     height: "30px",
     textAlign: "center",
-    lineHeight: "30px"
+    lineHeight: "30px",
+    color: props =>
+      chroma(props.color).luminance() <= 0.5 ? "white" : "rgba(0,0,0,0.7)"
   },
   copyOverlay: {
     opacity: "0",
@@ -93,6 +96,8 @@ const styles = {
     fontSize: "2rem",
     transform: "scale(0.1)",
     opacity: "0",
+    color: props =>
+      chroma(props.color).luminance() <= 0.5 ? "white" : "rgba(0,0,0,0.7)",
     "& h1": {
       fontWeight: "400",
       background: "rgba(255, 255, 255, 0.2)",
@@ -116,12 +121,6 @@ const styles = {
     zIndex: "25",
     transition: "all 0.4s ease-in-out",
     transitionDelay: "0.3s"
-  },
-  lightText: {
-    color: "white"
-  },
-  darkText: {
-    color: "rgba(0,0,0, 0.7)"
   }
 };
 
@@ -144,11 +143,7 @@ function ColorBox({
   };
   return (
     <CopyToClipboard text={color} onCopy={changeOverlayState}>
-      <div
-        className={`${classes.colorBox} ${singleColorPalette &&
-          classes.singleColorPalette}`}
-        style={{ background: color }}
-      >
+      <div className={classes.colorBox} style={{ background: color }}>
         <div
           className={`${classes.copyOverlay} 
           ${showOverlay && classes.copyOverlayShow}`}
@@ -156,25 +151,16 @@ function ColorBox({
         />
         <div
           className={`${classes.copyMsg} 
-          ${showOverlay && classes.copyMsgShow}
-          ${isDarkColor ? classes.lightText : classes.darkText}`}
+          ${showOverlay && classes.copyMsgShow}`}
         >
           <h1>Copied!</h1>
           <p>{color}</p>
         </div>
         <div className="copyContainer">
-          <div
-            className={`${classes.boxContent} ${isDarkColor &&
-              classes.lightText}`}
-          >
+          <div className={classes.boxContent}>
             <span>{name}</span>
           </div>
-          <button
-            id="copyButton"
-            className={`${classes.copyButton} ${
-              isDarkColor ? classes.lightText : classes.darkText
-            }`}
-          >
+          <button id="copyButton" className={classes.copyButton}>
             Copy
           </button>
         </div>
@@ -183,13 +169,7 @@ function ColorBox({
             to={"/palette/" + paletteId + "/" + colorId}
             onClick={e => e.stopPropagation()}
           >
-            <span
-              className={`${classes.moreButton} ${
-                isDarkColor ? classes.lightText : classes.darkText
-              }`}
-            >
-              MORE
-            </span>
+            <span className={classes.moreButton}>MORE</span>
           </Link>
         )}
       </div>
