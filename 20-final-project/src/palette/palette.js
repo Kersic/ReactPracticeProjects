@@ -1,19 +1,9 @@
 import React, { useState } from "react";
 import { withStyles } from "@material-ui/styles";
-import ColorBox from "./colorBox";
-import Navbar from "./navbar";
-import Fotter from "./fotter";
-
-const styles = {
-  palette: {
-    height: "100vh",
-    display: "flex",
-    flexDirection: "column"
-  },
-  paletteColors: {
-    height: "100vh"
-  }
-};
+import ColorBox from "../colorBox/colorBox";
+import Navbar from "../navbar/navbar";
+import Footer from "../footer/footer";
+import styles from "./paletteStyles";
 
 function Palette({ classes, palette }) {
   const [level, setLevel] = useState(500);
@@ -47,7 +37,7 @@ function Palette({ classes, palette }) {
           />
         ))}
       </div>
-      <Fotter palette={palette} />
+      <Footer palette={palette} />
     </div>
   );
 }
