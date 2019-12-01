@@ -43,7 +43,7 @@ function Palette({ classes, palette }) {
             key={color.id}
             colorId={color.id}
             paletteId={palette.id}
-            showLink={true}
+            singleColorPalette={false}
           />
         ))}
       </div>

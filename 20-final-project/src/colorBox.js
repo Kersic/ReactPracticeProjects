@@ -18,6 +18,9 @@ const styles = {
     marginBottom: "-3.5px",
     fontFamily: "verdana"
   },
+  singleColorPalette: {
+    height: "50%"
+  },
   copyButton: {
     width: "100px",
     height: "30px",
@@ -116,7 +119,14 @@ const styles = {
   }
 };
 
-function ColorBox({ classes, color, name, colorId, paletteId, showLink }) {
+function ColorBox({
+  classes,
+  color,
+  name,
+  colorId,
+  paletteId,
+  singleColorPalette
+}) {
   const [showOverlay, setShowOverlay] = useState(false);
   useEffect(() => {
     setTimeout(() => setShowOverlay(false), 1500);
@@ -127,7 +137,11 @@ function ColorBox({ classes, color, name, colorId, paletteId, showLink }) {
   };
   return (
     <CopyToClipboard text={color} onCopy={changeOverlayState}>
-      <div className={classes.colorBox} style={{ background: color }}>
+      <div
+        className={`${classes.colorBox} ${singleColorPalette &&
+          classes.singleColorPalette}`}
+        style={{ background: color }}
+      >
         <div
           className={`${classes.copyOverlay} ${showOverlay &&
             classes.copyOverlayShow}`}
@@ -147,7 +161,7 @@ function ColorBox({ classes, color, name, colorId, paletteId, showLink }) {
             Copy
           </button>
         </div>
-        {showLink && (
+        {!singleColorPalette && (
           <Link
             to={"/palette/" + paletteId + "/" + colorId}
             onClick={e => e.stopPropagation()}
