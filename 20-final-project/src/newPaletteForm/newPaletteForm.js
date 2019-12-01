@@ -128,6 +128,10 @@ function NewPaletteForm({ classes, history, savePalette, palettes }) {
     history.push("/");
   };
 
+  const removeColor = name => {
+    setColors(colors.filter(color => color.name !== name));
+  };
+
   return (
     <div className={classes.root}>
       <CssBaseline />
@@ -224,7 +228,11 @@ function NewPaletteForm({ classes, history, savePalette, palettes }) {
         <div className={classes.drawerHeader} />
 
         {colors.map(color => (
-          <DragableColorBox key={color.name} color={color} />
+          <DragableColorBox
+            key={color.name}
+            color={color}
+            removeColor={removeColor}
+          />
         ))}
       </main>
     </div>
