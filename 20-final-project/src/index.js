@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import ReactDOM from "react-dom";
 import { BrowserRouter, Route, Switch } from "react-router-dom";
 import Pallete from "./palette/palette";
@@ -11,6 +11,13 @@ import "./index.css";
 
 function App() {
   const [palettes, setPalettes] = useState(seedPalettes);
+  useEffect(() => {
+    setPalettes(JSON.parse(window.localStorage.getItem('palettes'))||seedPalettes)
+  }, []);
+
+  useEffect(() => {
+    window.localStorage.setItem('palettes', JSON.stringify(palettes));
+  }, [palettes]);
 
   const findPalette = id => {
     return palettes.find(palette => palette.id === id);
