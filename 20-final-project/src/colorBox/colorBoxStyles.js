@@ -111,6 +111,9 @@ export default {
     justifyContent: "center",
     flexDirection: "column",
     fontSize: "2rem",
+    [sizes.down("xs")]: {
+      fontSize: "1.5rem"
+    },
     transform: "scale(0.1)",
     opacity: "0",
     color: props =>
@@ -124,10 +127,8 @@ export default {
       textAlign: "center",
       marginBottom: "0",
       padding: "1rem",
-      textTransform: "uppercase"
-      // [sizes.down("xs")]: {
-      //   fontSize: "6rem"
-      // }
+      textTransform: "uppercase",
+      
     },
     "& p": {
       fontSize: "2rem",

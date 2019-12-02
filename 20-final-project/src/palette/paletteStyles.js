@@ -1,3 +1,5 @@
+import sizes from '../screenSizes';
+
 export default {
   palette: {
     height: "100vh",
@@ -15,7 +17,19 @@ export default {
     position: "relative",
     cursor: "pointer",
     marginBottom: "-3.5px",
-    fontFamily: "verdana"
+    fontFamily: "verdana",
+    [sizes.down("lg")]: {
+      width: "25%",
+      height:"33.3333%"
+    },
+    [sizes.down("md")]: {
+      width: "50%",
+      height: "20%"
+    },
+    [sizes.down("xs")]: {
+      width: "100%",
+      height: "10%"
+    }
   },
   goBack: {
     backgroundColor: "black"
@@ -37,6 +51,7 @@ export default {
     lineHeight: "30px",
     color: "white",
     textTransform: "uppercase",
-    textDecoration: "none"
+    textDecoration: "none",
+   
   }
 };
