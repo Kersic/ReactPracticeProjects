@@ -27,13 +27,17 @@ function App() {
     setPalettes([...palettes, newPalette]);
   };
 
+  const removePalette = paletteName => {
+    setPalettes(palettes.filter(palette => palette.paletteName !== paletteName));
+  }
+
   return (
     <div className="App">
       <Switch>
         <Route
           exact
           path="/"
-          render={() => <PalleteList palettes={palettes} />}
+          render={() => <PalleteList removePalette={removePalette} palettes={palettes} />}
         />
         <Route
           exact
