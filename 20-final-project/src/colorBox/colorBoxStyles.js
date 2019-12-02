@@ -1,5 +1,6 @@
 import chroma from "chroma-js";
 import { TEXT_COLOR_BREAKPOINT } from "../constants";
+import sizes from '../screenSizes';
 const textColorBrakPoint = TEXT_COLOR_BREAKPOINT;
 
 export default {
@@ -15,7 +16,19 @@ export default {
       transition: "0.5s"
     },
     marginBottom: "-3.5px",
-    fontFamily: "verdana"
+    fontFamily: "verdana",
+    [sizes.down("lg")]: {
+      width: "25%",
+      height: props => (props.singleColorPalette ? "33.3333%":"20%" )
+    },
+    [sizes.down("md")]: {
+      width: "50%",
+      height: props => (props.singleColorPalette ?  "20%":"10%")
+    },
+    [sizes.down("xs")]: {
+      width: "100%",
+      height: props => (props.singleColorPalette ? "10%":"5%")
+    }
   },
   copyButton: {
     width: "100px",
