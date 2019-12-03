@@ -3,11 +3,11 @@ import { withStyles } from "@material-ui/styles";
 import styles from "./miniPaletteStyles";
 import DeleteIcon from '@material-ui/icons/Delete';
 
-function MiniPalette({ classes, palette, goToPalette, removePalette }) {
+function MiniPalette({ classes, palette, goToPalette, openDialog }) {
 
   const handleCLick = e => {
     e.stopPropagation();
-    removePalette(palette.paletteName);
+    openDialog(palette.paletteName);
   }
 
   return (
