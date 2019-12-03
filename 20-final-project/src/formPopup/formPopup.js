@@ -30,6 +30,7 @@ function FormPopup({ palettes, handleSavePalette, hideForm }) {
       paletteName: newPaletteName,
       emoji:emoji.native
     }
+    setStage('');
     handleSavePalette(newPalette)
   }
 
