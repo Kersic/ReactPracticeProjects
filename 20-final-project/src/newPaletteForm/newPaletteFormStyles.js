@@ -48,9 +48,12 @@ const styles = theme => ({
   },
   buttons: {
     width: "100%",
+    display:'flex',
+    justifyContent: "center"
   },
   button: {
-    width: "50%"
+    width: "43%",
+    margin: "2%"
   }
 });
 

@@ -49,7 +49,7 @@ function NewPaletteFormNavbar({
           >
             <AddToPhotosIcon/>
           </IconButton>
-          <Typography variant="h6" color="inherit" noWrap>
+          <Typography variant="h6" color="inherit" noWrap className={classes.navbarTItle}>
             Create A Palette
           </Typography>
         </Toolbar>

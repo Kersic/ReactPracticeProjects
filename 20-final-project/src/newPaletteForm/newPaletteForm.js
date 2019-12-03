@@ -91,7 +91,7 @@ function NewPaletteForm({
           <IconButton onClick={handleDrawerClose}>
             <ChevronLeftIcon />
           </IconButton>
-        </div>{" "}
+        </div>
         <Divider />
         <div className={classes.container}>
           <Typography variant="h4" gutterBottom>
