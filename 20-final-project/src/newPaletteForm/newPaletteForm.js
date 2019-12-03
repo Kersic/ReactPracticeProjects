@@ -131,6 +131,7 @@ function NewPaletteForm({
         <div className={classes.drawerHeader} />
         <DragableColorList
           axis="xy"
+           distance={5}
           colors={colors}
           removeColor={removeColor}
           onSortEnd={onSortEnd}
