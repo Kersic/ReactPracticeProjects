@@ -12,7 +12,7 @@ import { CSSTransition, TransitionGroup } from "react-transition-group";
 import "./index.css";
 
 function App() {
-  const [palettes, setPalettes] = useState([]);
+  const [palettes, setPalettes] = useState(seedPalettes);
   useEffect(() => {
     setPalettes(JSON.parse(window.localStorage.getItem('palettes'))||seedPalettes)
   }, []);
@@ -80,6 +80,13 @@ function App() {
                 />
               </Page>
             )}
+          />
+          <Route
+            render={() => 
+            <Page> 
+              <PalleteList removePalette={removePalette} palettes={palettes} /> 
+            </Page>
+            }
           />
         </Switch>
       </CSSTransition>

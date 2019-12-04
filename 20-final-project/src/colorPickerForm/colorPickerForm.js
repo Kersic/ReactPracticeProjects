@@ -34,7 +34,7 @@ function ColorPickerFrom({ classes, colors, addNewColor, paletteIsFull }) {
         onChangeComplete={newColor => setCurrentColor(newColor.hex)}
         className={classes.picker}
       />
-      <ValidatorForm onSubmit={handleAddColor}>
+      <ValidatorForm onSubmit={handleAddColor} instantValidate={false}>
         <TextValidator
           value={currentName}
           className={classes.colorNameInput}

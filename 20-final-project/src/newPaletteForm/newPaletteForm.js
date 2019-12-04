@@ -13,6 +13,7 @@ import { arrayMove } from "react-sortable-hoc";
 import { withRouter } from "react-router-dom";
 import NewPaletteFormNavbar from "../newPaletteFormNavbar/newPaletteFormNavbar";
 import ColorPickerFrom from "../colorPickerForm/colorPickerForm";
+import seedPalettes from '../seedPalettes';
 
 NewPaletteForm.defaultProps = {
   maxColors: 20
@@ -26,7 +27,7 @@ function NewPaletteForm({
   maxColors
 }) {
   const [open, setOpen] = useState(true);
-  const [colors, setColors] = useState(palettes[0].colors);
+  const [colors, setColors] = useState(seedPalettes[0].colors);
   const paletteIsFull = colors.length >= maxColors;
 
   const handleDrawerOpen = () => {
@@ -66,8 +67,14 @@ function NewPaletteForm({
 
   const addRandomColor = () => {
     const allColors = palettes.map(p => p.colors).flat();
-    const rand = Math.floor(Math.random() * allColors.length);
-    setColors([...colors, allColors[rand]]);
+    let randColor;
+    let isDuplicate = true;
+    while(isDuplicate){
+      const rand = Math.floor(Math.random() * allColors.length);
+      randColor = allColors[rand];
+      isDuplicate = colors.some(color => color.name === randColor.name)
+    }
+    setColors([...colors, randColor]);
   };
 
   return (

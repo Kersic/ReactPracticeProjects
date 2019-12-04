@@ -1,4 +1,8 @@
-import sizes from "../screenSizes";
+import chroma from "chroma-js";
+import { TEXT_COLOR_BREAKPOINT } from "../constants";
+import sizes from '../screenSizes';
+const textColorBrakPoint = TEXT_COLOR_BREAKPOINT;
+
 const styles = {
   dragableColorBox: {
     width: "20%",
@@ -41,7 +45,10 @@ const styles = {
       height: "100%",
       alignItems: "center"
     },
-    color: "rgba(0,0,0,0.5)",
+     color: props =>
+      chroma(props.color.color).luminance() <= textColorBrakPoint
+        ? "white"
+        : "rgba(0,0,0,0.7)",
     letterSpacing: "1px",
     textTransform: "uppercase",
     fontSize: "12px",

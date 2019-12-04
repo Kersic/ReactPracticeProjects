@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useEffect, memo} from "react";
 import { withStyles } from "@material-ui/styles";
 import styles from "./miniPaletteStyles";
 import DeleteIcon from '@material-ui/icons/Delete';
@@ -33,4 +33,4 @@ function MiniPalette({ classes, palette, goToPalette, openDialog }) {
   );
 }
 
-export default withStyles(styles)(MiniPalette);
+export default withStyles(styles)(memo(MiniPalette));
