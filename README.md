@@ -1,8 +1,8 @@
 # React Projects
 
-Project for Udemy react bootcamp: [The Modern React Bootcamp] (https://www.udemy.com/course/modern-react-bootcamp/)
+Project for Udemy react bootcamp: [The Modern React Bootcamp](https://www.udemy.com/course/modern-react-bootcamp/)
 
-# Projects Examples
+## Projects Examples
 
 ### Color Picker
 [live example](https://6n8z0.csb.app/)<br/>
