@@ -15,6 +15,7 @@ import CloseIcon from "@material-ui/icons/Close";
 import DialogTitle from "@material-ui/core/DialogTitle";
 import blue from "@material-ui/core/colors/blue";
 import red from "@material-ui/core/colors/red";
+import Button from "@material-ui/core/Button";
 
 function PalleteList({ classes, history, palettes, removePalette }) {
   const [showDeleteForm, setShowDeleteForm] = useState(false);
@@ -39,7 +40,15 @@ function PalleteList({ classes, history, palettes, removePalette }) {
       <div className={classes.containter}>
         <nav className={classes.nav}>
           <h1 className={classes.heading}>React Color Picker</h1>
-          <Link to="/palette/new">Create Palette</Link>
+          <Link to="/palette/new"> 
+            <Button
+                className={classes.button}
+                variant="contained"
+                color="secondary"
+              >
+                Create Palette
+            </Button>
+          </Link>
         </nav>
         <TransitionGroup className={classes.palettes}>
           {palettes.map(palette => (

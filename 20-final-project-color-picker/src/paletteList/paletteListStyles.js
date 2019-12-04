@@ -22,7 +22,8 @@ export default {
     overflow: "scroll"
   },
   heading: {
-    fontSize: "2rem"
+    fontSize: "2rem",
+    fontFamily: 'Pacifico'
   },
   container: {
     width: "50%",
@@ -36,6 +37,11 @@ export default {
     [sizes.down("xs")]: {
       width: "75%"
     }
+  },
+  button: {
+    "& a": {
+      textDecoration: "none"
+    },
   },
   nav: {
     display: "flex",
